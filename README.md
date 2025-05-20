@@ -21,6 +21,8 @@ This project uses a [GraphQL API backend](https://github.com/DZaf/graphql-api). 
 
 ![Register Page Screenshot](./public/Register.JPG)
 
+![List Page Screenshot](./public/List.png)
+
 ## 📋 TODO
 
 These features are under development and will be added soon:
