@@ -9,6 +9,7 @@ This project uses a [GraphQL API backend](https://github.com/DZaf/graphql-api). 
 ## 🚀 Features
 
 - User registration and authentication
+- Add job in the list
 - Protected routes
 - Apollo Client integration for GraphQL
 - Modular SCSS styling
@@ -24,10 +25,10 @@ This project uses a [GraphQL API backend](https://github.com/DZaf/graphql-api). 
 
 These features are under development and will be added soon:
 
-- ✅ Display a list of items
-- ⏳ Add a form to create new list items
+- ✅ Display a list of items make UI better
 - ⏳ Edit and remove items from the list
 - ⏳ Add unit tests using **Jest**
+- ⏳ When adding a job to check if exists
 
 ## 📁 Project Structure
 

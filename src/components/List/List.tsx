@@ -2,6 +2,7 @@
 import styles from "./List.module.scss";
 import { useAppSelector } from "../../hooks/useAuth";
 import JobForm from "../forms/job/JobForm";
+import { useRefreshJobs } from "../../Utils/refreshListUtil";
 
 const List: React.FC = () => {
     const user = useAppSelector((state) => state.user.user);

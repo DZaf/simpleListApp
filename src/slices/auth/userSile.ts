@@ -34,8 +34,13 @@ const userSlice = createSlice({
                 );
             }
         },
+        setJobs: (state, action: PayloadAction<Job[]>) => {
+            if (state.user) {
+                state.user.jobs = action.payload;
+            }
+        },
     },
 });
 
-export const { setUser, clearUser, addJob, removeJob } = userSlice.actions;
+export const { setUser, clearUser, addJob, removeJob, setJobs } = userSlice.actions;
 export default userSlice.reducer;

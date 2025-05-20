@@ -8,16 +8,7 @@ const Home: React.FC = () => {
 
     return (
         <div>
-            <h2>List Page</h2>
-
-            {user && (
-                <div>
-                    <h3>Welcome, {user.name} {user.surname}</h3>
-                    <p>Username: {user.username}</p>
-                    <p>Email: {user.email}</p>
-                    <List />
-                </div>
-            )}
+            <List />
         </div>
     );
 
