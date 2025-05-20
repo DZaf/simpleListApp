@@ -21,9 +21,9 @@ function App() {
         <main className={styles.mainContent}>
           <Routes>
             <Route path="/" element={<Login />} />
-            <Route path="/list" element={<Home />} />
-            <Route path="/about" element={<About />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
       </Router>

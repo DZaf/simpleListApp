@@ -1,0 +1,18 @@
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1e2128;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    margin: 1rem auto;
+    max-width: 960px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    justify-content: space-between;
+}
+
+.job {
+    color: antiquewhite
+}

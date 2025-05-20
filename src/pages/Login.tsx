@@ -1,4 +1,3 @@
-// src/pages/Login.tsx
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { useNavigate } from 'react-router-dom';
@@ -9,6 +8,7 @@ import { useAppDispatch } from '../hooks/useAuth';
 import { LOGIN } from '../graphql/login.graphql';
 import { setCredentials } from '../slices/auth/authSlice';
 import { setUser } from '../slices/auth/userSile';
+import Input from '../components/Input/Input';
 
 const Login: React.FC = () => {
     const dispatch = useAppDispatch();
@@ -35,7 +35,7 @@ const Login: React.FC = () => {
             if (token && user) {
                 dispatch(setCredentials({ token, username: user.username }));
                 dispatch(setUser(user));
-                navigate('/list');
+                navigate('/home');
             }
         } catch (err) {
             console.error('Login error:', err);
@@ -46,13 +46,13 @@ const Login: React.FC = () => {
         <div className={styles.formContainer}>
             <h2>Login</h2>
             <form onSubmit={handleSubmit} className={styles.form}>
-                <input
+                <Input
                     name="identifier"
                     placeholder="Email or Username"
                     onChange={handleChange}
                     required
                 />
-                <input
+                <Input
                     name="password"
                     type="password"
                     placeholder="Password"

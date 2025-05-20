@@ -41,7 +41,11 @@ button {
     color: #90ee90;
 }
 
-.error {
-    margin-top: 1rem;
+.errorMessage {
+    margin: 0;
     color: #ff6b6b;
+}
+
+.inputAndError {
+    width: 100%;
 }

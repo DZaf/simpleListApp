@@ -7,6 +7,12 @@ const Navbar: React.FC = () => {
         <nav className={styles.navbar}>
             <div className={styles.navLinks}>
                 <NavLink
+                    to="/register"
+                    className={({ isActive }) => (isActive ? styles.active : styles.link)}
+                >
+                    Register
+                </NavLink>
+                <NavLink
                     to="/"
                     className={({ isActive }) => (isActive ? styles.active : styles.link)}
                 >
@@ -17,12 +23,6 @@ const Navbar: React.FC = () => {
                     className={({ isActive }) => (isActive ? styles.active : styles.link)}
                 >
                     Profile
-                </NavLink>
-                <NavLink
-                    to="/register"
-                    className={({ isActive }) => (isActive ? styles.active : styles.link)}
-                >
-                    Register
                 </NavLink>
                 <NavLink
                     to="/home"

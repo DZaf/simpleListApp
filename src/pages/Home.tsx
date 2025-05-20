@@ -1,3 +1,4 @@
+import List from "../components/List/List";
 import { useAppSelector } from "../hooks/useAuth";
 
 const Home: React.FC = () => {
@@ -14,15 +15,7 @@ const Home: React.FC = () => {
                     <h3>Welcome, {user.name} {user.surname}</h3>
                     <p>Username: {user.username}</p>
                     <p>Email: {user.email}</p>
-
-                    <h4>Your Jobs:</h4>
-                    <ul>
-                        {user.jobs.map((job) => (
-                            <li key={job.title}>
-                                <strong>{job.title}</strong>: {job.description} (ends {job.endDate})
-                            </li>
-                        ))}
-                    </ul>
+                    <List />
                 </div>
             )}
         </div>

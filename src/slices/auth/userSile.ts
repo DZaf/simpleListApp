@@ -1,5 +1,3 @@
-// src/slices/user/userSlice.ts
-
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { User } from '../../types/user.types';
 import { Job } from '../../types/job.types';
@@ -23,6 +21,8 @@ const userSlice = createSlice({
             state.user = null;
         },
         addJob: (state, action: PayloadAction<Job>) => {
+            console.log('Adding job:', action.payload);
+            console.log('Current user:', state.user);
             if (state.user) {
                 state.user.jobs = [...state.user.jobs, action.payload];
             }
